@@ -65,6 +65,8 @@ class Grafo {
     }
 
     private void unir(Map<String, String> subconjuntos, String x, String y) {
-        subconjuntos.put(x, y);
+        String raizX = encontrar(subconjuntos, x);
+        String raizY = encontrar(subconjuntos, y);
+        subconjuntos.put(raizX, raizY);
     }
 }

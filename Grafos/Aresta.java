@@ -14,9 +14,6 @@ class Aresta implements Comparable<Aresta> {
     //CompareTo
     @Override
     public int compareTo(Aresta outraAresta) {
-        if (this.valor != outraAresta.valor) {
-            return Integer.compare(this.valor, outraAresta.valor);
-        }
-        return valor;
+        return Integer.compare(this.valor, outraAresta.valor);
     }
 }
