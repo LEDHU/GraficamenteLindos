@@ -19,8 +19,8 @@ class Grafo {
         vertices.add(vertice);
     }
 
-    public void adicionarAresta(String origem, String destino, int km, int custo) {
-        Aresta aresta = new Aresta(origem, destino, km, custo);
+    public void adicionarAresta(String origem, String destino, int valor) {
+        Aresta aresta = new Aresta(origem, destino, valor);
         arestas.add(aresta);
     }
 
